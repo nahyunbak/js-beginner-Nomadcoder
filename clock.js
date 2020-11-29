@@ -25,6 +25,7 @@ function getTime() {
 function init() {
     getTime();
     setInterval(getTime, 1000);
+    
 }
 
 //4.호출
