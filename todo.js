@@ -61,13 +61,32 @@ function handleSubmit(event){
 }
 
 //3단계: 로드하기(로컬스토리지에서 꺼내기)
-//JSON(Javascript Object Notaion)
+//JSON(Javascript Object Notaion)로.. 문자열에서 변환해서 '꺼내는'거다. 
+//JSON.stringify(toDos) vs JSON.parse(loadedToDos) 
+//set과 get 아이템 메소드 인자로 쓰임. 
+//.forEach() 메소드는, for each괄호안에 있는 함수의 배열의 각 요소를 넣어 한 번씩 실행함. 
+//object.key 를 하면 밸류가 나온다. 
+/*
+여기서, console.log(toDo.text)를 하면 text에 저장된 인풋값의 이름이 쫙 나온다. 
 function loadToDos() {
     const loadedToDos = localStorage.getItem(TODOS_LS);
     if(loadedToDos !== null){
-        console.log(loadedToDos);
         const parsedToDos = JSON.parse(loadedToDos);
-        console.log(parsedToDos);
+        parsedToDos.forEach(function(toDo) {
+            console.log(toDo.text)
+        })
+
+    }
+
+*/
+function loadToDos() {
+    const loadedToDos = localStorage.getItem(TODOS_LS);
+    if(loadedToDos !== null){
+        const parsedToDos = JSON.parse(loadedToDos);
+        parsedToDos.forEach(function(toDo) {
+            paintToDo(toDo.text)
+        })
+
     }
 
 }
