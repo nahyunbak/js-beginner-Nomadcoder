@@ -63,11 +63,13 @@ img {
 .js-clock {
   color:  rgb(216, 215, 215);
 
+
 }
 
 .js-form {
   color: white;
   text-align:center;
+
 }
 
 .js-toDoForm {
@@ -80,7 +82,7 @@ ul {
   position: relative;
   left: -44px;
   list-style-type: none;
-  font-size: 15px;
+  font-size: 30px;
   color: rgb(216, 215, 215);
 }
 
