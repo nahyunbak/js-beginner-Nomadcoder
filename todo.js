@@ -78,6 +78,12 @@ function saveToDos() {
 //자바스크립트는 전부 문자열로 저장하려고 한다. 
 //.id는 아이디를 부여하는 걸 의마한다. 
 function paintToDo(text){
+    const ul =document.querySelector("ul");
+    if (ul.childElementCount > 4) {
+        alert("please remove todolist!")
+        return 
+    }
+
     //상수 저장
     const li = document.createElement("li");
     const delBtn = document.createElement("button");

@@ -4,7 +4,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  color: black;
   margin: 0;
 
 }
@@ -54,17 +54,20 @@ img {
 }
 
 .block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   top: 10%;
-
-
+  background-color: rgba(229, 192, 192, 0.918);
+  border: 6px solid black;
+  width: 400px;
+  height: 400px;
+  opacity: 80%;
 }
 
-.js-clock {
-  color:  rgb(216, 215, 215);
 
-
-}
 
 .js-form {
   color: white;
@@ -83,13 +86,8 @@ ul {
   left: -44px;
   list-style-type: none;
   font-size: 30px;
-  color: rgb(216, 215, 215);
 }
 
-h4 {
-  color:  rgb(216, 215, 215);
-  
-}
 
 input {
   padding: 0;
@@ -107,6 +105,5 @@ button {
   color: grey;
 
 }
-
 
 
